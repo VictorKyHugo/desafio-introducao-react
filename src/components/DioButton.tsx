@@ -1,10 +1,11 @@
 import { 
     Button,
 } from '@chakra-ui/react';
+import { MouseEventHandler } from 'react';
 
 interface DioButtonProps {
     children: string,
-    click: () => void
+    click: MouseEventHandler
 }
 
 export const DioButton = ({ children, click }: DioButtonProps) => {
